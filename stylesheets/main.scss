@@ -4,7 +4,8 @@ body{
 }
 
 @media all and (max-width: 960px){
-  .navdesktop-wrapper{     display:none!important ;  }
+  .navdesktop-wrapper ul {     display:none!important ;  }
+
 .navmobile-wrapper{
 
     list-style: none;
@@ -36,7 +37,7 @@ body{
 /*desktop*/
 @media all and (min-width: 960px){
 
- .navmobile-wrapper{display:none!important;  }
+ .foo-hamburger{ display:none!important;  }
 
 .navdesktop-wrapper{
   margin:0;
@@ -47,17 +48,30 @@ body{
 position: fixed;
 top:0;
 }
+.navdesktop-wrapper ul{
+
+  list-style:none;
+  overflow:auto;
+  width: 100%;
+position: fixed;
+top:0;
+margin:0;
+padding:0;
+background-color: #333;
+}
   .navdesktop-wrapper li{
     float:left;
-    text-decoration: none;
-    display:block;
-    background-color: #333;
+
+
+
+
 
      a{
        display:block;
+       text-decoration: none;
       color: white;
       text-align: center;
-      padding: 27px;
+      padding: 14px 16px;
 
     } a:hover {
       background-color: #111;

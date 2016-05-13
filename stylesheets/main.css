@@ -3,7 +3,7 @@ body {
   margin: 0; }
 
 @media all and (max-width: 960px) {
-  .navdesktop-wrapper {
+  .navdesktop-wrapper ul {
     display: none !important; }
 
   .navmobile-wrapper {
@@ -28,7 +28,7 @@ body {
     color: white; } }
 /*desktop*/
 @media all and (min-width: 960px) {
-  .navmobile-wrapper {
+  .foo-hamburger {
     display: none !important; }
 
   .navdesktop-wrapper {
@@ -40,16 +40,24 @@ body {
     position: fixed;
     top: 0; }
 
-  .navdesktop-wrapper li {
-    float: left;
-    text-decoration: none;
-    display: block;
+  .navdesktop-wrapper ul {
+    list-style: none;
+    overflow: auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: 0;
     background-color: #333; }
+
+  .navdesktop-wrapper li {
+    float: left; }
     .navdesktop-wrapper li a {
       display: block;
+      text-decoration: none;
       color: white;
       text-align: center;
-      padding: 27px; }
+      padding: 14px 16px; }
     .navdesktop-wrapper li a:hover {
       background-color: #111; } }
 
